@@ -23,7 +23,7 @@ public static String order_id;
 		order_id = o_id;
 		
 	}
-	
+	//delete from orders by id
 	public static void Remove(){
 	
 		
@@ -39,19 +39,16 @@ public static String order_id;
 		
 	}
 	
-	
+	//add order
 	public static void Add(){
 		
 		Scanner sc = new Scanner(System.in);
 
-		
-		
-
-		System.out.println("Add EmployeeID");
+		System.out.println("Add EmployeeID"); 
 		String e_ID;//need to check foreign key in employee
 		e_ID = sc.nextLine();
 		
-		
+		//check if the employee id exist in employees
 		while(!CheckE_ID(e_ID, myStatement)){
 			System.out.println("ERROR, THat ID doesn't Exist");
 			System.out.println("Add EmployeeID");
@@ -205,6 +202,8 @@ public static String order_id;
 		  }  
 		  return true;  
 	}
+	
+	//check if customer id exists in customers
 	public static boolean CheckC_ID(String Id, java.sql.Statement b){
 		  boolean okay = true;
 		  String sql = "select CustomerID from customers where CustomerID = '"+Id+"'";
@@ -225,7 +224,7 @@ public static String order_id;
 	 
 	 
 	 
-	 
+	  //check if employee id exist is in employee table 
 	 public static boolean CheckE_ID(String Id, java.sql.Statement b){
 		  boolean okay = true;
 		  String sql = "select EmployeeID from employees where EmployeeID = '"+Id+"'";
@@ -243,7 +242,7 @@ public static String order_id;
 	 
 		  return okay;
 	  }
-	
+	  //check if shipping id exist in shipping table
 	 public static boolean CheckS_ID(String Id, java.sql.Statement b){
 		  boolean okay = true;
 		  String sql = "select ShipperID from shippers where ShipperID = '"+Id+"'";

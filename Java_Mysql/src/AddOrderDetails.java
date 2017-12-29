@@ -1,5 +1,7 @@
+/*
+Class to handle changes from Orders table to OrderDetails table
+*/
 package mysql.second;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;

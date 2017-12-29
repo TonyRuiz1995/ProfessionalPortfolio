@@ -1,5 +1,7 @@
+/*
+Class to add orders to database
+*/
 package mysql.second;
-
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;

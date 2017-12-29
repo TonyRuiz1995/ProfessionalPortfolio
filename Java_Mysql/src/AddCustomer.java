@@ -1,5 +1,8 @@
-package mysql.second;
+/*
+Class to add customers to database
+*/
 
+package mysql.second;
 import java.sql.SQLException;
 import java.util.Scanner;
 import java.sql.*;

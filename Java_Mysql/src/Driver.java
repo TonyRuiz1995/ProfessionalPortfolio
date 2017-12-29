@@ -1,3 +1,10 @@
+/*
+Driver class
+-Class that will run the main program
+-Call functions from others classes
+
+*/
+
 package mysql.second;
 import java.sql.*;
 import java.util.Scanner;
